@@ -1,6 +1,7 @@
 
     body {
         margin: 0 !important;
+        
     }
     
     .box{
@@ -12,8 +13,8 @@
     min-height:100vh;
     overflow-y: hidden !important; 
     background-image: url(background.png) !important;
-    /* padding-bottom:3vh; */
-    /* padding-top: 3vh; */
+    padding-bottom:3vh;
+    padding-top: 3vh;
     }
 
     .container{
