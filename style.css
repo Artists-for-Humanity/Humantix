@@ -31,9 +31,11 @@ body {
 
 }
 
-iframe{
-    height: 1100px;
+.styles_IFrame__lQG4e {
+    height: 1000px;
+    border-radius: 15px;
 }
+
 .container {
     width: 80vw;
 }
