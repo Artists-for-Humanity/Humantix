@@ -3,33 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Artist For Humanity - Artopia </title>
+    <title>Artist For Humanity - Artopia</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://events.humanitix.com/scripts/widgets/checkout.js" type="module"></script>
-
 </head>
 <body>
-
     <!-- Add the following to your website's HTML. -->
-     <div class="box">
+    <div class="box">
         <div class="container">
             <humanitix-checkout event-id="artopia"></humanitix-checkout>
         </div>
+    </div>
 
-        <script>
-            document.addEventListener("DOMContentLoaded", function() {
-                var parentIframe = window.frameElement;
-                if (parentIframe && parentIframe.classList.contains('styles_IFrame__lQG4e')) {
-                    parentIframe.style.borderRadius = '15px';
-                    parentIframe.style.height = '1000px';
-                    parentIframe.style.width = '100%';
-                    // Additional styles if needed
-                }
-            });
-        </script>
-     </div>
-    
-
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var parentIframe = window.frameElement;
+            if (parentIframe && parentIframe.classList.contains('styles_IFrame__lQG4e')) {
+                parentIframe.style.borderRadius = '15px';
+                parentIframe.style.height = '1000px';
+                parentIframe.style.width = '100%';
+                // Additional styles if needed
+            }
+        });
+    </script>
 </body>
-<!-- <script src="script.js"></script> -->
 </html>
