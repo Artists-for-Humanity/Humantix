@@ -14,6 +14,7 @@
     min-height:100vh;
     overflow-y: hidden !important; 
     background-image: url(background.png) !important;
+    background-repeat: no-repeat;
     padding-bottom:3vh;
     padding-top: 3vh;
     }
