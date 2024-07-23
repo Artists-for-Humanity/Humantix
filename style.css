@@ -29,10 +29,11 @@ body {
     flex-direction: column;
     display: flex;
 
-
-
 }
 
+iframe{
+    min-height: 100vh;
+}
 .container {
     width: 80vw;
 }
