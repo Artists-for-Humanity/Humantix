@@ -15,6 +15,30 @@
     </div>
 
     <script>
+        // Function to dynamically inject CSS
+        function injectCSS(css) {
+            const style = document.createElement('style');
+            style.type = 'text/css';
+            if (style.styleSheet) {
+                style.styleSheet.cssText = css;
+            } else {
+                style.appendChild(document.createTextNode(css));
+            }
+            document.head.appendChild(style);
+        }
+
+        // CSS to override the existing style
+        const customCSS = `
+            .styles_IFrame__lQG4e {
+                height: 2000px; /* Adjust the height as needed */
+            }
+        `;
+
+        // Inject the CSS
+        injectCSS(customCSS);
+    </script>
+
+    <!-- <script>
         document.addEventListener("DOMContentLoaded", function() {
             var parentIframe = window.frameElement;
             if (parentIframe && parentIframe.classList.contains('styles_IFrame__lQG4e')) {
@@ -24,6 +48,6 @@
                 // Additional styles if needed
             }
         });
-    </script>
+    </script> -->
 </body>
 </html>
