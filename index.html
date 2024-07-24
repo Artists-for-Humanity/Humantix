@@ -23,6 +23,29 @@
         console.log(iframe);
     </script>
 
+<script>
+    function onIframeLoad() {
+        const iframe = document.querySelector('iframe');
+        const iframeDocument = iframe.contentDocument || iframe.contentWindow.document;
+        
+        // Example: Selecting an element inside the iframe
+        const elementInsideIframe = iframeDocument.querySelector('YOUR_SELECTOR_HERE');
+        
+        // Perform any action on the selected element
+        if (elementInsideIframe) {
+            console.log('Element found:', elementInsideIframe);
+            // You can now manipulate the element as needed
+        } else {
+            console.log('Element not found.');
+        }
+    }
+
+    window.onload = function() {
+        const iframe = document.querySelector('iframe');
+        iframe.onload = onIframeLoad;
+    };
+</script>
+
 <!-- </iframe> -->
 
     <!-- <script>
