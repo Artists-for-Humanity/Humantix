@@ -24,6 +24,9 @@ img{
     /* padding-top: 3vh; */
     border-radius: 15px; /* Adjust the radius value as needed */
     background-size: cover;
+    background-position: center;
+    /* transform: scaleX(-1); Flip the background image verticall */
+
 }
 .test {
     background-image: url(background.png) !important;
