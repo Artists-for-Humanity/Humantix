@@ -17,6 +17,7 @@ body {
     /* padding-bottom: 3vh; */
     /* padding-top: 3vh; */
     border-radius: 15px; /* Adjust the radius value as needed */
+    background-size: cover;
 }
 .test {
     background-image: url(background.png) !important;
